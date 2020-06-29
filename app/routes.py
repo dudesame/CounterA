@@ -30,6 +30,6 @@ def upload():
         if not os.path.exists(files_dir):
             os.mkdir(files_dir)
         f.save(filename)
-        return render_template('result.html',data=data)
+        return render_template('result.html', data=data)
 
     return render_template('upload.html', form=form)
