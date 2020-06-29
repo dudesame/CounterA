@@ -1,0 +1,16 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>
+    Welcome to my site!!!
+</h1>
+<p>
+    Уважаемый {{data.name}}! На вашу почту {{data.email}} мы можем отправить результат
+</p>
+<p>
+    Загрузка нового файла
+    <a href="{{url_for('upload')}}">UPLOAD</a>
+</p>
+
+{% endblock %}

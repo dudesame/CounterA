@@ -1,0 +1,16 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>
+    Welcome to my site!!!
+</h1>
+<p>
+    Search smthng in google
+    <a href="{{url_for('upload')}}">UPLOAD</a>
+</p>
+{% for country in dictionary %}
+{{dictionary[country]}} столица страны {{country}}<br>
+{% endfor %}
+
+{% endblock %}
